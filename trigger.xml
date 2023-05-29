@@ -1,0 +1,263 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder Id="e79749d9-0a6e-4ba2-9ae0-0579185c4058" Name="9-12" Enabled="true">
+    <Folders>
+      <Folder Id="ef99b427-cdf9-4524-9054-80c35410303f" Name="util" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Sequential="True" Name="priority_init" Id="6c31cdba-8f40-415d-a3f0-eacc222886f7" RegularExpression="00:0(0B|03|13)9::(距离战斗开始还有|戦闘開始まで|Battle commencing in )(?&lt;sec&gt;\d{1,2})(秒！ | seconds\! )" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
+            <Actions>
+              <Action OrderNumber="1" ListVariableOp="UnsetRegex" ListVariableName="^BLU_O12S" VariableOp="UnsetRegex" VariableName="^PAN" ActionType="Variable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" ListVariableOp="UnsetRegex" ListVariableName="^PAN" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="ListVariable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="PAN_markDelay" VariableExpression="100" ActionType="Variable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" ListVariableOp="Push" ListVariableName="PAN_PartyList" ListVariableExpression="Astin Odyssey" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" ListVariableOp="Push" ListVariableName="PAN_PartyList" ListVariableExpression="Amy Yeager" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" ListVariableOp="Push" ListVariableName="PAN_PartyList" ListVariableExpression="Sakurugawa Shigure" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" ListVariableOp="Push" ListVariableName="PAN_PartyList" ListVariableExpression="Love Uu" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" ListVariableOp="Push" ListVariableName="PAN_PartyList" ListVariableExpression="Kong Bai" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" ListVariableOp="Push" ListVariableName="PAN_PartyList" ListVariableExpression="Caramel Aikome" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="10" ListVariableOp="Push" ListVariableName="PAN_PartyList" ListVariableExpression="Hyacinth Chizoba" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="11" ListVariableOp="Push" ListVariableName="PAN_PartyList" ListVariableExpression="Masya Elakha" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="12" ListVariableOp="Push" ListVariableName="PAN_Priority" ListVariableExpression="8" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="13" ListVariableOp="Push" ListVariableName="PAN_Priority" ListVariableExpression="1" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="14" ListVariableOp="Push" ListVariableName="PAN_Priority" ListVariableExpression="2" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="15" ListVariableOp="Push" ListVariableName="PAN_Priority" ListVariableExpression="3" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="16" ListVariableOp="Push" ListVariableName="PAN_Priority" ListVariableExpression="4" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="17" ListVariableOp="Push" ListVariableName="PAN_Priority" ListVariableExpression="5" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="18" ListVariableOp="Push" ListVariableName="PAN_Priority" ListVariableExpression="6" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="19" ListVariableOp="Push" ListVariableName="PAN_Priority" ListVariableExpression="7" ActionType="ListVariable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="20" UseTTSTextExpression="初始化完成" UseTTSRateExpression="+1" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="e66afbfd-87ae-46d3-b436-e3c2f511f2c0" Name="09" Enabled="true">
+        <Folders />
+        <Triggers />
+      </Folder>
+      <Folder Id="b1ed0f9a-c224-4e36-a958-660f01f81e40" Name="10" Enabled="true">
+        <Folders />
+        <Triggers />
+      </Folder>
+      <Folder Id="f803f298-e5df-4481-8a6e-489142051977" Name="11" Enabled="true">
+        <Folders />
+        <Triggers />
+      </Folder>
+      <Folder Id="fd9c4ea3-f149-44bb-8fef-6e407748f4bf" Name="12" Enabled="true">
+        <Folders />
+        <Triggers />
+      </Folder>
+      <Folder Id="5e442f06-7ade-48aa-ba02-e2206635ff4c" Name="template" Enabled="true">
+        <Folders>
+          <Folder Id="1318aee8-ae07-4033-a793-2c293872fbe9" Name="DSRp6, 2x2buff, 4void" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Sequential="True" Name="buff2" Id="1b40b295-6fb1-4e74-8444-767f01516353" RegularExpression=" 1A:002:.+:(?&lt;player&gt;[^:]+):00:" Description="buffid: 002">
+                <Actions>
+                  <Action OrderNumber="1" ListVariableOp="Push" ListVariableExpressionType="Numeric" ListVariableName="PAN_Template_Buff2" ListVariableExpression="${lvar:PAN_Priority[${lvar:PAN_PartyList.indexof(${player})}]} " ActionType="ListVariable" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" TriggerId="ee1ad775-1993-4737-adb4-e8ea319b902d" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="100" Asynchronous="False" RefireRequeue="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Sequential="True" Name="buff1" Id="b1f3f6e3-3e40-4b8a-96c1-f5cc4e835c1c" RegularExpression=" 1A:001:.+:(?&lt;player&gt;[^:]+):00:" Description="buffid: 001">
+                <Actions>
+                  <Action OrderNumber="1" ListVariableOp="Push" ListVariableExpressionType="Numeric" ListVariableName="PAN_Template_Buff1" ListVariableExpression="${lvar:PAN_Priority[${lvar:PAN_PartyList.indexof(${player})}]} " ActionType="ListVariable" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" TriggerId="ee1ad775-1993-4737-adb4-e8ea319b902d" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="100" Asynchronous="False" RefireRequeue="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Sequential="True" Name="void" Id="ee1ad775-1993-4737-adb4-e8ea319b902d" RegularExpression="" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
+                <Actions>
+                  <Action OrderNumber="1" ListVariableOp="SortAlphaAsc" ListVariableExpressionType="Numeric" ListVariableName="PAN_Template_Buff1" ActionType="ListVariable" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" ListVariableOp="SortAlphaAsc" ListVariableExpressionType="Numeric" ListVariableName="PAN_Template_Buff2" ActionType="ListVariable" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" ListVariableOp="Push" ListVariableExpressionType="Numeric" ListVariableName="PAN_Template_Void" ListVariableExpression="1" ActionType="ListVariable" ExecutionDelayExpression="50" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:PAN_Template_Buff1.indexof(1)}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:PAN_Template_Buff2.indexof(1)}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="4" ListVariableOp="Push" ListVariableExpressionType="Numeric" ListVariableName="PAN_Template_Void" ListVariableExpression="2" ActionType="ListVariable" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:PAN_Template_Buff1.indexof(2)}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:PAN_Template_Buff2.indexof(2)}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="5" ListVariableOp="Push" ListVariableExpressionType="Numeric" ListVariableName="PAN_Template_Void" ListVariableExpression="3" ActionType="ListVariable" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:PAN_Template_Buff1.indexof(3)}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:PAN_Template_Buff2.indexof(3)}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="6" ListVariableOp="Push" ListVariableExpressionType="Numeric" ListVariableName="PAN_Template_Void" ListVariableExpression="4" ActionType="ListVariable" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:PAN_Template_Buff1.indexof(4)}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:PAN_Template_Buff2.indexof(4)}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="7" ListVariableOp="Push" ListVariableExpressionType="Numeric" ListVariableName="PAN_Template_Void" ListVariableExpression="5" ActionType="ListVariable" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:PAN_Template_Buff1.indexof(5)}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:PAN_Template_Buff2.indexof(5)}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="8" ListVariableOp="Push" ListVariableExpressionType="Numeric" ListVariableName="PAN_Template_Void" ListVariableExpression="6" ActionType="ListVariable" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:PAN_Template_Buff1.indexof(6)}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:PAN_Template_Buff2.indexof(6)}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="9" ListVariableOp="Push" ListVariableExpressionType="Numeric" ListVariableName="PAN_Template_Void" ListVariableExpression="7" ActionType="ListVariable" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:PAN_Template_Buff1.indexof(7)}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:PAN_Template_Buff2.indexof(7)}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="10" ListVariableOp="Push" ListVariableExpressionType="Numeric" ListVariableName="PAN_Template_Void" ListVariableExpression="8" ActionType="ListVariable" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:PAN_Template_Buff1.indexof(8)}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:PAN_Template_Buff2.indexof(8)}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="11" ListVariableOp="SortAlphaAsc" ListVariableExpressionType="Numeric" ListVariableName="PAN_Template_Void" ActionType="ListVariable" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="12" TriggerId="c3fde727-9850-4b1c-9019-405f23cff06e" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="50" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="13" TriggerId="df2264fc-5f26-401c-ae11-c808876911cf" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="50" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Sequential="True" Name="mark" Id="c3fde727-9850-4b1c-9019-405f23cff06e" RegularExpression="" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
+                <Actions>
+                  <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/mk attack1 &lt;${lvar:TOP_Television.indexof(${lvar:PAN_Template_Void[1]})}&gt;" ActionType="NamedCallback">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/mk attack2 &lt;${lvar:TOP_Television.indexof(${lvar:PAN_Template_Void[2]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/mk attack3 &lt;${lvar:TOP_Television.indexof(${lvar:PAN_Template_Void[3]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/mk attack4 &lt;${lvar:TOP_Television.indexof(${lvar:PAN_Template_Void[4]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="5" NamedCallbackName="command" NamedCallbackParam="/mk bind1 &lt;${lvar:TOP_Television.indexof(${lvar:PAN_Template_Buff1[1]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="6" NamedCallbackName="command" NamedCallbackParam="/mk bind2 &lt;${lvar:TOP_Television.indexof(${lvar:PAN_Template_Buff1[2]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="7" NamedCallbackName="command" NamedCallbackParam="/mk ignore1 &lt;${lvar:TOP_Television.indexof(${lvar:PAN_Template_Buff2[1]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="8" NamedCallbackName="command" NamedCallbackParam="/mk ignore2 &lt;${lvar:TOP_Television.indexof(${lvar:PAN_Template_Buff2[2]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="9" NamedCallbackName="command" NamedCallbackParam="/e clear mk" TriggerId="6a9abb23-16b7-4e34-b9af-30dae486c49f" TriggerForce="regexp" ActionType="NamedCallback" ExecutionDelayExpression="20000" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Sequential="True" Name="echo" Id="df2264fc-5f26-401c-ae11-c808876911cf" RegularExpression="" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
+                <Actions>
+                  <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/e Void#1 ${lvar:TOP_PartyList[${lvar:TOP_Television.indexof(${lvar:PAN_Template_Void[1]})}]}" ActionType="NamedCallback" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/e Void#2 ${lvar:TOP_PartyList[${lvar:TOP_Television.indexof(${lvar:PAN_Template_Void[2]})}]}" ActionType="NamedCallback" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/e Void#3 ${lvar:TOP_PartyList[${lvar:TOP_Television.indexof(${lvar:PAN_Template_Void[3]})}]}" ActionType="NamedCallback" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/e Void#4 ${lvar:TOP_PartyList[${lvar:TOP_Television.indexof(${lvar:PAN_Template_Void[4]})}]}" ActionType="NamedCallback" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="5" NamedCallbackName="command" NamedCallbackParam="/e Buff1#1 ${lvar:TOP_PartyList[${lvar:TOP_Television.indexof(${lvar:PAN_Template_Buff1[1]})}]}" ActionType="NamedCallback" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="6" NamedCallbackName="command" NamedCallbackParam="/e Buff1#2 ${lvar:TOP_PartyList[${lvar:TOP_Television.indexof(${lvar:PAN_Template_Buff1[2]})}]}" ActionType="NamedCallback" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="7" NamedCallbackName="command" NamedCallbackParam="/e Buff2#1 ${lvar:TOP_PartyList[${lvar:TOP_Television.indexof(${lvar:PAN_Template_Buff2[1]})}]}" ActionType="NamedCallback" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="8" NamedCallbackName="command" NamedCallbackParam="/e Buff2#2 ${lvar:TOP_PartyList[${lvar:TOP_Television.indexof(${lvar:PAN_Template_Buff2[2]})}]}" ActionType="NamedCallback" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="9" NamedCallbackName="command" NamedCallbackParam="/e ——————" ActionType="NamedCallback" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
+        </Folders>
+        <Triggers />
+      </Folder>
+    </Folders>
+    <Triggers />
+  </ExportedFolder>
+</TriggernometryExport>
