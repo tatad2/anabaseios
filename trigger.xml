@@ -103,7 +103,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Sequential="True" Name="buff1" Id="b1f3f6e3-3e40-4b8a-96c1-f5cc4e835c1c" RegularExpression=" 1A:001:.+:(?&lt;player&gt;[^:]+):00:" Description="buffid: 001">
                 <Actions>
@@ -115,7 +114,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Sequential="True" Name="void" Id="ee1ad775-1993-4737-adb4-e8ea319b902d" RegularExpression="" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
                 <Actions>
@@ -176,7 +174,7 @@
                   <Action OrderNumber="11" ListVariableOp="SortAlphaAsc" ListVariableExpressionType="Numeric" ListVariableName="PAN_Template_Void" ActionType="ListVariable" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="12" TriggerId="c3fde727-9850-4b1c-9019-405f23cff06e" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="50" Asynchronous="False">
+                  <Action OrderNumber="12" TriggerId="3e9ae519-df4b-4840-b918-4b003f04b76e" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="50" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                   <Action OrderNumber="13" TriggerId="df2264fc-5f26-401c-ae11-c808876911cf" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="50" Asynchronous="False">
@@ -184,35 +182,34 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
-              <Trigger Enabled="true" Sequential="True" Name="mark" Id="c3fde727-9850-4b1c-9019-405f23cff06e" RegularExpression="" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
+              <Trigger Enabled="true" Sequential="True" Name="mark" Id="3e9ae519-df4b-4840-b918-4b003f04b76e" RegularExpression="" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
                 <Actions>
-                  <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/mk attack1 &lt;${lvar:TOP_Television.indexof(${lvar:PAN_Template_Void[1]})}&gt;" ActionType="NamedCallback">
+                  <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/mk attack1 &lt;${lvar:PAN_Priority.indexof(${lvar:PAN_Template_Void[1]})}&gt;" ActionType="NamedCallback">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/mk attack2 &lt;${lvar:TOP_Television.indexof(${lvar:PAN_Template_Void[2]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
+                  <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/mk attack2 &lt;${lvar:PAN_Priority.indexof(${lvar:PAN_Template_Void[2]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/mk attack3 &lt;${lvar:TOP_Television.indexof(${lvar:PAN_Template_Void[3]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
+                  <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/mk attack3 &lt;${lvar:PAN_Priority.indexof(${lvar:PAN_Template_Void[3]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/mk attack4 &lt;${lvar:TOP_Television.indexof(${lvar:PAN_Template_Void[4]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
+                  <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/mk attack4 &lt;${lvar:PAN_Priority.indexof(${lvar:PAN_Template_Void[4]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="5" NamedCallbackName="command" NamedCallbackParam="/mk bind1 &lt;${lvar:TOP_Television.indexof(${lvar:PAN_Template_Buff1[1]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
+                  <Action OrderNumber="5" NamedCallbackName="command" NamedCallbackParam="/mk bind1 &lt;${lvar:PAN_Priority.indexof(${lvar:PAN_Template_Buff1[1]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="6" NamedCallbackName="command" NamedCallbackParam="/mk bind2 &lt;${lvar:TOP_Television.indexof(${lvar:PAN_Template_Buff1[2]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
+                  <Action OrderNumber="6" NamedCallbackName="command" NamedCallbackParam="/mk bind2 &lt;${lvar:PAN_Priority.indexof(${lvar:PAN_Template_Buff1[2]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="7" NamedCallbackName="command" NamedCallbackParam="/mk ignore1 &lt;${lvar:TOP_Television.indexof(${lvar:PAN_Template_Buff2[1]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
+                  <Action OrderNumber="7" NamedCallbackName="command" NamedCallbackParam="/mk ignore1 &lt;${lvar:PAN_Priority.indexof(${lvar:PAN_Template_Buff2[1]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="8" NamedCallbackName="command" NamedCallbackParam="/mk ignore2 &lt;${lvar:TOP_Television.indexof(${lvar:PAN_Template_Buff2[2]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
+                  <Action OrderNumber="8" NamedCallbackName="command" NamedCallbackParam="/mk ignore2 &lt;${lvar:PAN_Priority.indexof(${lvar:PAN_Template_Buff2[2]})}&gt;" ActionType="NamedCallback" ExecutionDelayExpression="${var:PAN_markDelay}">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="9" NamedCallbackName="command" NamedCallbackParam="/e clear mk" TriggerId="6a9abb23-16b7-4e34-b9af-30dae486c49f" TriggerForce="regexp" ActionType="NamedCallback" ExecutionDelayExpression="20000" Asynchronous="False">
+                  <Action OrderNumber="9" NamedCallbackName="command" NamedCallbackParam="/e clear mark" TriggerForce="regexp" ActionType="NamedCallback" ExecutionDelayExpression="20000" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -221,28 +218,28 @@
               </Trigger>
               <Trigger Enabled="true" Sequential="True" Name="echo" Id="df2264fc-5f26-401c-ae11-c808876911cf" RegularExpression="" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
                 <Actions>
-                  <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/e Void#1 ${lvar:TOP_PartyList[${lvar:TOP_Television.indexof(${lvar:PAN_Template_Void[1]})}]}" ActionType="NamedCallback" Asynchronous="False">
+                  <Action OrderNumber="1" NamedCallbackName="command" NamedCallbackParam="/e Void#1 ${lvar:PAN_PartyList[${lvar:PAN_Priority.indexof(${lvar:PAN_Template_Void[1]})}]}" ActionType="NamedCallback" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/e Void#2 ${lvar:TOP_PartyList[${lvar:TOP_Television.indexof(${lvar:PAN_Template_Void[2]})}]}" ActionType="NamedCallback" Asynchronous="False">
+                  <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/e Void#2 ${lvar:PAN_PartyList[${lvar:PAN_Priority.indexof(${lvar:PAN_Template_Void[2]})}]}" ActionType="NamedCallback" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/e Void#3 ${lvar:TOP_PartyList[${lvar:TOP_Television.indexof(${lvar:PAN_Template_Void[3]})}]}" ActionType="NamedCallback" Asynchronous="False">
+                  <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/e Void#3 ${lvar:PAN_PartyList[${lvar:PAN_Priority.indexof(${lvar:PAN_Template_Void[3]})}]}" ActionType="NamedCallback" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/e Void#4 ${lvar:TOP_PartyList[${lvar:TOP_Television.indexof(${lvar:PAN_Template_Void[4]})}]}" ActionType="NamedCallback" Asynchronous="False">
+                  <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/e Void#4 ${lvar:PAN_PartyList[${lvar:PAN_Priority.indexof(${lvar:PAN_Template_Void[4]})}]}" ActionType="NamedCallback" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="5" NamedCallbackName="command" NamedCallbackParam="/e Buff1#1 ${lvar:TOP_PartyList[${lvar:TOP_Television.indexof(${lvar:PAN_Template_Buff1[1]})}]}" ActionType="NamedCallback" Asynchronous="False">
+                  <Action OrderNumber="5" NamedCallbackName="command" NamedCallbackParam="/e Buff1#1 ${lvar:PAN_PartyList[${lvar:PAN_Priority.indexof(${lvar:PAN_Template_Buff1[1]})}]}" ActionType="NamedCallback" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="6" NamedCallbackName="command" NamedCallbackParam="/e Buff1#2 ${lvar:TOP_PartyList[${lvar:TOP_Television.indexof(${lvar:PAN_Template_Buff1[2]})}]}" ActionType="NamedCallback" Asynchronous="False">
+                  <Action OrderNumber="6" NamedCallbackName="command" NamedCallbackParam="/e Buff1#2 ${lvar:PAN_PartyList[${lvar:PAN_Priority.indexof(${lvar:PAN_Template_Buff1[2]})}]}" ActionType="NamedCallback" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="7" NamedCallbackName="command" NamedCallbackParam="/e Buff2#1 ${lvar:TOP_PartyList[${lvar:TOP_Television.indexof(${lvar:PAN_Template_Buff2[1]})}]}" ActionType="NamedCallback" Asynchronous="False">
+                  <Action OrderNumber="7" NamedCallbackName="command" NamedCallbackParam="/e Buff2#1 ${lvar:PAN_PartyList[${lvar:PAN_Priority.indexof(${lvar:PAN_Template_Buff2[1]})}]}" ActionType="NamedCallback" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="8" NamedCallbackName="command" NamedCallbackParam="/e Buff2#2 ${lvar:TOP_PartyList[${lvar:TOP_Television.indexof(${lvar:PAN_Template_Buff2[2]})}]}" ActionType="NamedCallback" Asynchronous="False">
+                  <Action OrderNumber="8" NamedCallbackName="command" NamedCallbackParam="/e Buff2#2 ${lvar:PAN_PartyList[${lvar:PAN_Priority.indexof(${lvar:PAN_Template_Buff2[2]})}]}" ActionType="NamedCallback" Asynchronous="False">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                   <Action OrderNumber="9" NamedCallbackName="command" NamedCallbackParam="/e ——————" ActionType="NamedCallback" Asynchronous="False">
